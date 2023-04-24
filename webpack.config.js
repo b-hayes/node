@@ -20,5 +20,11 @@ module.exports = {
                 ]
             }
         ]
+    },
+    devServer: {
+        static: {
+            directory: './public'
+        },
+        port: 9999
     }
 }
