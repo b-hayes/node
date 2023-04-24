@@ -7,3 +7,7 @@ console.log(emptyModule);// {}
 
 const moduleOne = require('./src/module-one')
 console.log(moduleOne);
+
+//at some point you will want to install modules made by other people.
+// the command `npm install` can do this for you and you can search the modules available
+// at: https://www.npmjs.com/ ir by typing `npm search`
