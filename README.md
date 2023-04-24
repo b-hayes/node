@@ -1,6 +1,6 @@
 # NODE
-
 Just documenting my brief refresh with NodeJS, so I can refer to it later.
+Based on this great video https://www.youtube.com/watch?v=5IG4UmULyoA
 
 Using Node v20.
 
