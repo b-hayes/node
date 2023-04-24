@@ -39,12 +39,14 @@ let txt = getFile().then(function () {
 console.log('log from outside the function:')
 console.log(txt)
 
-//so await conclusion for await is that its basically shorthand for .then(function (result){
-
-//unless you have several awaits inside an async function, this is where it becomes useful...
+//Conclusion: await basically shorthand for .then(function (result){ /* do stuff */ })
+//  unless you have several awaits inside an async function,
+//  this is where it actually becomes useful...
 async function doAllTheThings() {
-    //for example, pretend we are reading more than one file, and we don't know what files are larger,
-    // so we don't know what files will finish first.
+    //Say we want to read a bunch of files.
+    // Instead of waiting to read files one by one, we can read them all at once with multiple
+    // cpu threads each reading the file as fast as they can.
+    // And then at the end we can combine them into a single result.
 
     //create the promises
     let file1 = readFile('./hello.txt', 'utf8')
