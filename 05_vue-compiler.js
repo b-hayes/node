@@ -1,5 +1,9 @@
 //this is an attempt at compiling vue components without a heavy framework.
-
+/*
+requires these dev dependencies.
+    "@vue/compiler-sfc": "^3.2.47",
+    "vue-loader": "^16.0.0-rc.1"
+ */
 const compilerSfc = require("@vue/compiler-sfc")
 const { readFile, writeFile } = require('fs').promises
 const loader = require("vue-loader")
